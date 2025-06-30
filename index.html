@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Single Column Web Page</title>
+	<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+	<div id="wrap">
+	<header>
+		<h1><a href="index.html">Portfolio</a></h1>
+
+		<input type="checkbox" id="navBtn">  
+		<label for="navBtn" class="open"><span></span></label>
+
+		<nav>
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="works.html">WORKS</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul>
+		</nav>
+
+	</header>
+
+	<main>
+		<section class="sec01">
+			<body>
+			
+				
+			<div class="profile">
+			  <img src="images/kao.jpg" alt="プロフィール画像" class="profile-img" />
+			  <div class="profile-text">
+				<h2>庭瀨 美來</h2>
+				<p>
+				九州産業大学 ソーシャルデザイン学科 2年<br>
+				一つ一つテーマを決め、制作しています。<br>
+				将来的にはMVやグッズ制作など、イラストを通して誰かの心に届くような活動をしていきたいです🐾<br>
+				</p>
+			  </div>
+			</div>
+			
+			</body>
+			<head>
+			  <meta charset="UTF-8">
+			  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+			  <title>画像詳細表示</title>
+			  <link rel="stylesheet" href="style.css">
+			</head>
+			<body>
+			
+			<div class="image-list">
+			  <div class="image-item" onclick="showDetail('detail1')">
+				<img src="images/ski.jpg" alt="画像1">
+			  </div>
+			
+			  <div class="image-item" onclick="showDetail('detail2')">
+				<img src="images/dada.jpg" alt="画像2">
+			  </div>
+			
+			<!-- 詳細表示 -->
+			<div id="detail1" class="detail-overlay">
+			  <div class="detail-content">
+				<button class="close-btn" onclick="closeDetail('detail1')">×</button>
+				<img src="images/skii.jpg" alt="詳細画像1">
+			  </div>
+			</div>
+			
+			<div id="detail2" class="detail-overlay">
+			  <div class="detail-content">
+				<button class="close-btn" onclick="closeDetail('detail2')">×</button>
+				<img src="images/dadada.jpg" alt="詳細画像2">
+			  </div>
+			</div>
+			
+			<script>
+			  function showDetail(id) {
+				document.getElementById(id).classList.add('active');
+			  }
+			
+			  function closeDetail(id) {
+				document.getElementById(id).classList.remove('active');
+			  }
+			</script>
+			  
+			</body>
+			</html>
+		</section>
+	</main>
+
+	<footer>
+		<p>© Niwase </p>
+	</footer>
+</div>
+</body>
+
+</html>
